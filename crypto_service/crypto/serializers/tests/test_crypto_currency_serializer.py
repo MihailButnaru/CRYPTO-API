@@ -1,8 +1,6 @@
 from unittest import TestCase
 
-from crypto.serializers import (
-    InputCryptoCurrencySerializer
-)
+from crypto.serializers import InputCryptoCurrencySerializer
 
 
 class TestCryptoCurrencySerializers(TestCase):
@@ -11,14 +9,41 @@ class TestCryptoCurrencySerializers(TestCase):
             "crypto_currency": {
                 "name": "BTC",
                 "start_date": "2020-01-13",
-                "end_date": "2020-04-13"
+                "end_date": "2020-04-13",
             }
         }
 
     def test_input_crypto_currency_it_can_serialize(self):
+        """ Test ensures that the input data can be serialized
+        successfully.
+        """
         inst = InputCryptoCurrencySerializer(data=self.input_data)
 
         assert inst.is_valid()
 
-        self.assertEqual(set(inst.validated_data["crypto_currency"]),
-                         set(self.input_data["crypto_currency"]))
+        self.assertEqual(
+            set(inst.validated_data["crypto_currency"]),
+            set(self.input_data["crypto_currency"]),
+        )
+
+    def test_input_crypto_currency_start_date_greater_end_date(self):
+        """ Test ensures that the start date is not greater than
+        the end date, ValueError exception is raised. """
+
+        self.input_data["crypto_currency"]["start_date"] = "2020-05-01"
+
+        inst = InputCryptoCurrencySerializer(data=self.input_data)
+
+        with self.assertRaises(ValueError):
+            inst.is_valid()
+
+    def test_input_crypto_currency_end_date_less_start_date(self):
+        """ Test ensures that the end date is not less than the
+        start date, ValueError exception is raised."""
+
+        self.input_data["crypto_currency"]["end_date"] = "2020-01-01"
+
+        inst = InputCryptoCurrencySerializer(data=self.input_data)
+
+        with self.assertRaises(ValueError):
+            inst.is_valid()
