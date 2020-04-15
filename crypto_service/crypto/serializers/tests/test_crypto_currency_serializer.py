@@ -1,5 +1,7 @@
+from datetime import datetime
 from unittest import TestCase
 
+from crypto.exceptions.api_exceptions import ValidationAPIError
 from crypto.serializers import InputCryptoCurrencySerializer
 
 
@@ -9,7 +11,7 @@ class TestCryptoCurrencySerializers(TestCase):
             "crypto_currency": {
                 "name": "BTC",
                 "start_date": "2020-01-13",
-                "end_date": "2020-04-13",
+                "end_date": datetime.utcnow().date(),
             }
         }
 
@@ -34,7 +36,7 @@ class TestCryptoCurrencySerializers(TestCase):
 
         inst = InputCryptoCurrencySerializer(data=self.input_data)
 
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValidationAPIError):
             inst.is_valid()
 
     def test_input_crypto_currency_end_date_less_start_date(self):
@@ -45,5 +47,5 @@ class TestCryptoCurrencySerializers(TestCase):
 
         inst = InputCryptoCurrencySerializer(data=self.input_data)
 
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValidationAPIError):
             inst.is_valid()
