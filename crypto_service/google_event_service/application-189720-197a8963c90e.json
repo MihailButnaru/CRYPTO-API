@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "food-application-189720",
+  "private_key_id": "197a8963c90e05c4b5cb6c38b3f6c4f47f98ca45",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRxAjUgJBiEsnW\n8EmoxKyPvqZfWSpCPQhqOiR7U2YSYUe5D8ztnLz5SILLqAlc3lsEFgwl/EAhkavm\n5gEx5c/669n5+XUmjJPU5a8c348WSG0iLvihp56fUY136k/dSlFAAX0XBZKZzHSh\nLr/0OboIgVbw7KPfIioAej9IU4GIFTsntHooMeSZGkwhwANs4Z8Dt4yYRmVUxwAF\nt0gEklr1QlWl+NhHIBM3Kv20FBYZGU62kbH0LoG1+WLQbALOCAeOgAWwUPRbfNHj\nqM6pcaxp6xDp4CfQJeIoZ55rTtjvSHFKL+SNv4lsgS8ShVBQmvo+C7JHum70DO4V\n4kZCJwAxAgMBAAECggEAJpWvph8L7+5S0EWc1v1uXHaONeW53ztIy/lr8n9xvBnG\nzqS4ZlC5dgU/geSj7EA+b676hxYyWbpo620NdTc3nYk6rD+VrASZwMSLBH2e3VNv\nN6V6OIoTpGyk4BTqoeLktShQ8SYmREIWhfuKdYsUzDG2Y1S0A/xNy46xC0XJAtXH\nk5/2zIN4N2fasmpiJUD4g96FOXZfHjlnYkRSkCET88P3IVOlOOXEezdgEiXmjJwh\nse24XSrUhjWWcYDOyT/M1J5wk6UFFqiLcnd+XvOHV0/Vnrv4AD7mjZqLFrmuZave\nwwpfYz9MnP5Hqx9GBLHdfU62uYR/whF6gNH5Awly/QKBgQDzetJQcRxaywPNDPpF\ndQ+R8LcuyZ73x0QnuHJInIgX4C7wa1HpMRt+EJEOuyhbDPuDuN7SasU50ebE8gok\nWn3S5Q/S3zMf0sfrX5IL2fyuMrLF17lhNIDaNQcO/klGFyjXNbv8cEOIlVsuHQFO\nsBtZczkDpzFG5L/Jg4o06WYDLwKBgQDcjWZ0SS6frkZcNLWs/Kjr/e8/i9qoeFPm\nhAWs7/q3LtDHwglPBMu0XjiwD2kM/Hjjj04flkFB7DmXlLWTO3FxXd/1nOfgDP5V\nEgKnaA+gnFz9kZOCf+QrgqIZ4P8YEkh+QzuZ2OuEOKqbyD3h0OtKa/qKmx2na9fC\nZCq2EvvanwKBgQC6wcHiO/CQ39nJhaPOdQz9V1NbCwHpcqofgYX/ljl5ftbiSJ9q\nq+U3nEN3ti0tMdcWYU5gvc8MG6nT9Qe8fMC4bETn7ZZMWaRJMWRXvNvpTi/8Ow0R\nt3ECbtw8LuZLYeZMtQW9iuryMAXhaBQhpElGInBgEfVlOH63djMjhMdftwKBgDmC\ngYG3B3pJ1jz63Ziy9VU8DOO0Exs07SPBrz0uAmE7yuMbvJOnO3rXys5V5l2lg9xK\npONlqbSH5WiaNVKkAGvAP8Lq3Ce3G6aRILIIV3LY8wKHsEAqGxQhZyV6Xuom8lJC\nM8tlHdyHbi1a5I/6izAHwffchLoAS+17cwuxHY0fAoGBANcZV6PNyJF6jzBnQ3fa\nVSE0WXvZ6zUtqKhakE8la+U2eGWUufcqR92j0F/mlVrSmSmUU/PHdBVUQ/SSe8Xu\nTOc8nTSyvh0IcFfpdf24xpSztUmcDyDdOO6yzt0CNGFKSAcLQcxbqKnD8V7bVhXN\nDbfCMBRFKdoEdKMUhgLh8uJn\n-----END PRIVATE KEY-----\n",
+  "client_email": "crypto-api@food-application-189720.iam.gserviceaccount.com",
+  "client_id": "110282942146404445662",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/crypto-api%40food-application-189720.iam.gserviceaccount.com"
+}

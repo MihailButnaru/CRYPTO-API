@@ -4,7 +4,7 @@ from rest_framework import serializers
 class CryptoCurrencySerializer(serializers.Serializer):
     """ Crypto currency serializer"""
 
-    name = serializers.CharField(max_length=50, default="BTC")
+    name = serializers.ChoiceField(default="BTC", choices=['BTC'])
     start_date = serializers.DateField()
     end_date = serializers.DateField()
 
