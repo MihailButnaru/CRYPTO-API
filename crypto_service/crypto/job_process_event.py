@@ -1,6 +1,9 @@
+from crypto.exceptions.api_exceptions import PlatformAPIError
 from crypto.managers import TwitterManager
 from nlp_event_service import ProcessEventTextRunner
-from crypto.exceptions.api_exceptions import PlatformAPIError
+
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
 
 
 class JobProcessor:

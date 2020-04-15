@@ -4,6 +4,9 @@ from textblob import TextBlob
 
 from nlp_event_service.helpers import convert_emojis
 
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
+
 
 class ProcessEventTextRunner:
     @staticmethod

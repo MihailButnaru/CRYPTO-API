@@ -3,6 +3,9 @@ from typing import Union
 from crypto.exceptions.api_exceptions import PlatformAPIError
 from twitter_event_service import TwitterDataProcessor
 
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
+
 
 class TwitterManager:
     def __init__(self, input_data: dict):

@@ -1,5 +1,8 @@
 from rest_framework.exceptions import APIException
 
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
+
 
 class PlatformAPIError(APIException):
     status_code = 500

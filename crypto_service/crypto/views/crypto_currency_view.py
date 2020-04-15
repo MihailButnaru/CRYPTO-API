@@ -10,6 +10,9 @@ from crypto.serializers import (
     OutputCryptoCurrencySerializer,
 )
 
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
+
 _logger = logging.getLogger(__name__)
 
 

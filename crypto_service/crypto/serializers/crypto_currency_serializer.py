@@ -4,6 +4,9 @@ from rest_framework import serializers
 
 from crypto.exceptions.api_exceptions import ValidationAPIError
 
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
+
 
 class CryptoCurrencySerializer(serializers.Serializer):
     """ Crypto currency serializer"""

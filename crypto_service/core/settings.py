@@ -14,6 +14,9 @@ import os
 from configurations import Configuration
 from configurations.values import SecretValue
 
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -31,6 +34,7 @@ class Base(Configuration):
 
     INSTALLED_APPS = [
         "crypto",
+        "rest_framework",
         "django.contrib.admin",
         "django.contrib.auth",
         "django.contrib.contenttypes",

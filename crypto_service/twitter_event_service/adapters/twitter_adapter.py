@@ -8,6 +8,9 @@ from tweepy import TweepError
 
 from crypto.exceptions.api_exceptions import AuthenticationFailed
 
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
+
 _logger = logging.getLogger(__name__)
 
 

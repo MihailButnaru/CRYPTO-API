@@ -3,6 +3,9 @@ from django.conf import settings
 from twitter_event_service import init_twitter_connection
 from twitter_event_service.helpers import get_tweets, CryptoEnum
 
+__author__ = "Mihail Butnaru"
+__copyright__ = "Copyright 2020, All rights reserved."
+
 
 class TwitterDataProcessor:
     @staticmethod
