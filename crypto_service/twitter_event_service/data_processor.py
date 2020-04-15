@@ -10,7 +10,7 @@ class TwitterDataProcessor:
         api = init_twitter_connection()
 
         tweets = get_tweets(
-            connector=api.search,
+            search_api=api.search,
             input_data=input_data,
             crypto_name=CryptoEnum(value=crypto_name).name.lower(),
             number_of_tweets=settings.NUMBER_OF_TWEETS,

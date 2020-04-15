@@ -15,8 +15,8 @@ _logger = logging.getLogger(__name__)
 
 class CryptoCurrencyViewSet(ViewSet):
     def create(self, request):
-        """Viewset that is processing the
-        crypto currency and displays the analysis.
+        """View to process the sentiments from tweets,
+        crypto currency tweets from Twitter.
         """
         serializer = InputCryptoCurrencySerializer(data=request.data)
 
@@ -30,7 +30,9 @@ class CryptoCurrencyViewSet(ViewSet):
         output_serializer = OutputCryptoCurrencySerializer(data=response, many=True)
 
         if not output_serializer.is_valid():
-            _logger.error(f"Data does not match the object {output_serializer.errors}")
+            _logger.error(
+                f"Data does not match the expected object {output_serializer.errors}"
+            )
             return Response(status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         return Response(

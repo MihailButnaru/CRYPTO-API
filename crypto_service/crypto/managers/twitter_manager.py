@@ -8,8 +8,8 @@ class TwitterManager:
     def __init__(self, input_data: dict):
         self._data = input_data
 
-    def _extract_process_data_from_twitter(self) -> list:
-        """Extracts the data from the twitter API."""
+    def _extract_and_process_data_from_twitter(self) -> list:
+        """Extracts data from the twitter API."""
         twitter_processor = TwitterDataProcessor()
 
         twitter_data = twitter_processor.process_twitter_data_event(
@@ -18,14 +18,14 @@ class TwitterManager:
         return twitter_data
 
     def do_call_twitter(self) -> Union[list, PlatformAPIError]:
-        """Call to the twitter to process and to extract the data from the
+        """Twitter call to process and to extract data from the
         twitter API. [twitter_event_service used]
         """
-        twitter_data = self._extract_process_data_from_twitter()
+        twitter_data = self._extract_and_process_data_from_twitter()
 
         if not twitter_data:
-            return PlatformAPIError(
-                detail="There was a problem with extract data from the twitter"
+            raise PlatformAPIError(
+                detail="There was a problem when the data from twitter was extracted"
             )
 
         return twitter_data

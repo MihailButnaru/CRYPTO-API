@@ -12,8 +12,7 @@ _logger = logging.getLogger(__name__)
 
 
 def init_twitter_connection() -> tweepy.API:
-    """Initialize the twitter connection in order to get
-    access to the twitter data. """
+    """Initialize the twitter connection"""
     auth = tweepy.OAuthHandler(
         consumer_key=settings.TWITTER_CONSUMER_KEY,
         consumer_secret=settings.TWITTER_CONSUMER_SECRET,

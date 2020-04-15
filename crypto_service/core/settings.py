@@ -31,7 +31,6 @@ class Base(Configuration):
 
     INSTALLED_APPS = [
         "crypto",
-        "twitter_event_service",
         "django.contrib.admin",
         "django.contrib.auth",
         "django.contrib.contenttypes",
