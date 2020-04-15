@@ -1,20 +1,20 @@
-# The first instruction is what image we want to base our container on
-# We Use an official Python runtime as a parent image
-FROM python:3.6
-
+FROM python:latest
 # The enviroment variable ensures that the python output is set straight
 # to the terminal with out buffering it first
 # All the aditional env variable must be added, check the env.sample
 ENV PYTHONUNBUFFERED 1
 
-# create root directory for our project in the container
 RUN mkdir /crypto_service
 
-# Set the working directory to /crypto_service
+RUN apt-get -y update
+RUN apt-get install -y python python-pip python-dev python-psycopg2 postgresql-client 
+
+ADD requirements.txt /crypto_service/requirements.txt
+RUN pip install -r /crypto_service/requirements.txt
+
+RUN apt-get -y update && apt-get -y autoremove
 WORKDIR /crypto_service
 
-# Copy the current directory contents into the container at /crypto_service
-ADD . /crypto_service/
+EXPOSE 8000
 
-# Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+CMD gunicorn -b :8000 crypto_service.core.wsgi
