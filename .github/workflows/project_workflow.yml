@@ -27,7 +27,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        python crypto_service/manage.py test
+        python -m unittest discover crypto_service
       env:
         TWITTER_CONSUMER_KEY: "key"
         TWITTER_CONSUMER_SECRET: "secret"
