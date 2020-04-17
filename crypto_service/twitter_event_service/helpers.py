@@ -11,6 +11,8 @@ __copyright__ = "Copyright 2020, All rights reserved."
 
 class CryptoEnum(Enum):
     BITCOIN = "BTC"
+    ETHEREUM = "ETH"
+    RIPPLE = "XRP"
 
 
 def _get_tweet_between_end_start_date(
