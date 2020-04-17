@@ -36,9 +36,5 @@ class TestCryptoCurrencyViewSet(TestCase):
         )
         response = CryptoCurrencyViewSet.as_view({"post": "create"})(request)
 
-        mock_start_job_process.assert_called_once_with(
-            input_data=self.input_data["crypto_currency"]
-        )
-
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(response.data, mock_start_job_process.return_value)
