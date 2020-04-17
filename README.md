@@ -1,13 +1,13 @@
 <div align="center">
 <h1> Crypto Analysis RESTful API </h1>
 <p1>The Crypto API is designed to be a predictable and intuitive interface for
-interactive with analysed data from Twitter.</p1>
+interactive with data from Twitter.</p1>
 </div>
 <hr/>
 
 
 ## The Problem
-You to do some analysis in order to predict the crypto currency market. Crypto API allows
+You want to do some analysis in order to predict the crypto currency market. Crypto API allows
 you to access the sentiments of tweets from Twitter between the start_date and end_date.
 
 
@@ -69,7 +69,6 @@ more detailed information on the exact nature of an error in the HTTP response.
 <hr/>
 
 HTTP RESPONSE CODES
-<hr/>
 
 | RESPONSE CODE | MESSAGE    |
 | ------------- |:----------:|
@@ -79,3 +78,9 @@ HTTP RESPONSE CODES
 | 405 METHOD NOT ALLOWED | You are using an incorrect HTTP verb |
 | 404 NOT FOUND | The endpoint requested does not exist |
 | 500 INTERNAL SERVER ERROR | Something is wrong on our end |
+
+
+## License & Author
+License © MIHAIL BUTNARU
+
+Made by Mihail Butnaru
