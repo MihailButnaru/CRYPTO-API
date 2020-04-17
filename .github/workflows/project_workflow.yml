@@ -28,3 +28,8 @@ jobs:
     - name: Run Tests
       run: |
         python crypto_service/manage.py test
+      env:
+        TWITTER_CONSUMER_KEY: "key"
+        TWITTER_CONSUMER_SECRET: "secret"
+        TWITTER_ACCESS_TOKEN: "access_token"
+        TWITTER_ACCESS_TOKEN_SECRET: "access_secret"
