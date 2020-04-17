@@ -68,7 +68,7 @@ more detailed information on the exact nature of an error in the HTTP response.
 
 <hr/>
 
-HTTP RESPONSE CODES
+#### HTTP RESPONSE CODES
 
 | RESPONSE CODE | MESSAGE    |
 | ------------- |:----------:|
