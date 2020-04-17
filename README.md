@@ -81,6 +81,6 @@ more detailed information on the exact nature of an error in the HTTP response.
 
 
 ## License & Author
-License © MIHAIL BUTNARU
+License 2020 © MIHAIL BUTNARU
 
 Made by Mihail Butnaru
