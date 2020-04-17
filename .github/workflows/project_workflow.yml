@@ -29,6 +29,7 @@ jobs:
       run: |
         python -m unittest discover crypto_service
       env:
+        DJANGO_SETTINGS_MODULE: crypto_service.core.settings
         TWITTER_CONSUMER_KEY: "key"
         TWITTER_CONSUMER_SECRET: "secret"
         TWITTER_ACCESS_TOKEN: "access_token"

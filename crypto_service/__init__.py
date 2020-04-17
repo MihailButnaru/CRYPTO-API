@@ -1,0 +1,2 @@
+import configurations
+configurations.setup()
