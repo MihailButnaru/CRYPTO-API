@@ -1,4 +1,4 @@
-from unittest import TestCase
+from django.test import TestCase
 from unittest.mock import patch
 from datetime import date, datetime
 from django.test import RequestFactory
