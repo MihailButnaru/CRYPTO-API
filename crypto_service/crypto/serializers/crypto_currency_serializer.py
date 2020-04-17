@@ -11,7 +11,7 @@ __copyright__ = "Copyright 2020, All rights reserved."
 class CryptoCurrencySerializer(serializers.Serializer):
     """ Crypto currency serializer"""
 
-    name = serializers.ChoiceField(default="BTC", choices=["BTC"])
+    name = serializers.ChoiceField(default="BTC", choices=["BTC", "ETH", "XRP"])
     start_date = serializers.DateField()
     end_date = serializers.DateField()
 
