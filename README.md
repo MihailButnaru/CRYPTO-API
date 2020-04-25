@@ -42,7 +42,7 @@ $ python manage.py runserver
 ### Endpoint Example
 ``` 
 Request:
-POST /v0/crypto_analysis/
+POST /v1/crypto_analysis/
 
 {
     "crypto_currency": {
