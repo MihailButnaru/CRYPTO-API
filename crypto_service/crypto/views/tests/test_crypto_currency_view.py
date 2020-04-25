@@ -30,7 +30,7 @@ class TestCryptoCurrencyViewSet(TestCase):
         mock_start_job_process.return_value = self.output_data
 
         request = self.factory.post(
-            path="/v0/crypto_analysis/",
+            path="/v1/crypto_analysis/",
             data=self.input_data,
             content_type="application/json",
         )

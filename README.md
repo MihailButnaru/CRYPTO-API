@@ -37,7 +37,7 @@ $ python manage.py runserver
 ## Endpoints Structure
 | Endpoint        | Method  | Description  |
 | ------------- |:-------------:| :-----|
-| /v0/crypto_analysis/     | POST      |   Create a new set of analysis |
+| /v1/crypto_analysis/     | POST      |   Create a new set of analysis |
 
 ### Endpoint Example
 ``` 
