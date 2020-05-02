@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from unittest import TestCase
 
 from crypto.exceptions.api_exceptions import ValidationAPIError
@@ -32,7 +32,7 @@ class TestCryptoCurrencySerializers(TestCase):
         """ Test ensures that the start date is not greater than
         the end date, ValueError exception is raised. """
 
-        self.input_data["crypto_currency"]["start_date"] = "2020-05-01"
+        self.input_data["crypto_currency"]["start_date"] = datetime.utcnow().date() + timedelta(days=1)
 
         inst = InputCryptoCurrencySerializer(data=self.input_data)
 
