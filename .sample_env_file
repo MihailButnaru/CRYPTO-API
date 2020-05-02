@@ -1,4 +1,4 @@
-# Twitter auth credentials
+# Twitter app auth credentials
 TWITTER_CONSUMER_KEY=""
 TWITTER_CONSUMER_SECRET=""
 TWITTER_ACCESS_TOKEN=""
