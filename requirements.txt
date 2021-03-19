@@ -1,5 +1,5 @@
 django==2.2.13
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 django-configurations==2.2
 tweepy==3.8.0
 tweet-preprocessor==0.5.0
